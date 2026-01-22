@@ -1,0 +1,41 @@
+torch
+# === AI Toolkit YOLO v2 - Requirements ===
+# GUI Framework
+PyQt5>=5.15.0
+PyQt5-Qt5>=5.15.0
+
+# Image Processing
+Pillow>=10.0.0
+opencv-python-headless>=4.8.0
+
+# AI/ML Core
+ultralytics>=8.3.0
+numpy>=1.24.0
+
+# Data Processing
+pyyaml>=6.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+
+# Utilities
+tqdm>=4.65.0
+
+# === PyTorch Installation Notes ===
+# The app will auto-detect the best PyTorch version for your hardware.
+# 
+# For NVIDIA GPU (CUDA):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#
+# For AMD GPU (ROCm, Linux only):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/rocm6.0
+#
+# For Intel GPU (oneAPI):
+#   pip install torch torchvision intel-extension-for-pytorch
+#
+# For CPU only:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#
+# For Apple Silicon (M1/M2/M3):
+#   pip install torch torchvision (MPS backend is included)
